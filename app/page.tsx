@@ -1,3 +1,4 @@
+import CallBackSection from "components/home/CallBackSection";
 import Hero from "components/home/Hero";
 import Services from "components/home/Services";
 import React from "react";
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <Hero />
       <Services />
+      <CallBackSection />
     </div>
   );
 };

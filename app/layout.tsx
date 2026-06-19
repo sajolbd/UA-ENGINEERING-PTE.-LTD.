@@ -18,8 +18,7 @@ const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://ua-engineering-pte.vercel.app/";
+const siteUrl = "https://ua-engineering-pte.vercel.app";
 
 /* -------------------------------------------------------------------------- */
 /*                                   METADATA                                 */
