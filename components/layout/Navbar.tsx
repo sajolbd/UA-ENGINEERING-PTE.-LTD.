@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="relative hidden lg:flex items-center pl-6 pr-10 bg-secondary shrink-0">
           <span className="font-medium tracking-wide">
             Welcome to{" "}
-            <span className="text-primary font-bold">
+            <span className="font-bold tracking-[0.04em] text-white">
               UA ENGINEERING PTE. LTD.
             </span>
           </span>
