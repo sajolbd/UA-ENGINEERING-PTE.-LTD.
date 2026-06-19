@@ -1,16 +1,16 @@
 import AboutSection from "components/home/AboutSection";
 import CallBackSection from "components/home/CallBackSection";
 import Hero from "components/home/Hero";
-import Services from "components/home/Services";
+import Service from "components/home/Service";
 import React from "react";
 
 const page = () => {
   return (
     <div>
       <Hero />
-      <Services />
       <CallBackSection />
       <AboutSection />
+      <Service />
     </div>
   );
 };
