@@ -88,9 +88,9 @@ export default function CallBackSection() {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="group/submit relative h-12 w-full overflow-hidden rounded-md bg-primary px-6 font-bold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:shadow-lg text-xs"
+                                className="group/submit relative h-12 w-full overflow-hidden rounded-md bg-secondary px-6 font-bold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:shadow-lg text-xs"
                             >
-                                <span className="absolute inset-0 translate-x-[-101%] rounded-md bg-secondary transition-transform duration-500 ease-in-out group-hover/submit:translate-x-0" />
+                                <span className="absolute inset-0 translate-x-[-101%] rounded-md bg-primary transition-transform duration-500 ease-in-out group-hover/submit:translate-x-0" />
                                 <span className="relative z-10 flex items-center justify-center gap-1.5 transition-colors duration-300">
                                     Submit Now
                                     <Send size={12} className="transition-transform duration-300 group-hover/submit:translate-x-1" />

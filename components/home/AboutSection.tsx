@@ -88,7 +88,7 @@ export default function AboutSection() {
                         {/* Features */}
                         <div className="mb-10 grid gap-4 md:grid-cols-3">
                             {/* Reliability */}
-                            <div className="group border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:bg-secondary hover:border-secondary hover:shadow-xl">
+                            <div className="group border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:bg-primary hover:border-primary hover:shadow-xl">
                                 <ShieldCheck className="mb-3 h-10 w-10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:text-white" />
 
                                 <h3 className="mb-2 text-lg font-semibold text-secondary transition-colors duration-300 group-hover:text-white">
@@ -101,7 +101,7 @@ export default function AboutSection() {
                             </div>
 
                             {/* Expertise */}
-                            <div className="group border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:bg-secondary hover:border-secondary hover:shadow-xl">
+                            <div className="group border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:bg-primary hover:border-primary hover:shadow-xl">
                                 <HardHat className="mb-3 h-10 w-10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:text-white" />
 
                                 <h3 className="mb-2 text-lg font-semibold text-secondary transition-colors duration-300 group-hover:text-white">
@@ -114,7 +114,7 @@ export default function AboutSection() {
                             </div>
 
                             {/* Communication */}
-                            <div className="group border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:bg-secondary hover:border-secondary hover:shadow-xl">
+                            <div className="group border border-gray-200 bg-white p-5 transition-all duration-300 hover:-translate-y-2 hover:bg-primary hover:border-primary hover:shadow-xl">
                                 <MessagesSquare className="mb-3 h-10 w-10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:text-white" />
 
                                 <h3 className="mb-2 text-lg font-semibold text-secondary transition-colors duration-300 group-hover:text-white">
@@ -130,9 +130,9 @@ export default function AboutSection() {
                         {/* Button */}
                         <Link
                             href="/about"
-                            className="group relative inline-flex items-center overflow-hidden bg-primary px-8 py-3 font-semibold text-white"
+                            className="group relative inline-flex items-center overflow-hidden bg-secondary px-8 py-3 font-semibold text-white"
                         >
-                            <span className="absolute inset-0 -translate-x-full bg-secondary transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+                            <span className="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
 
                             <span className="relative z-10">
                                 About More
