@@ -54,15 +54,23 @@ export const metadata: Metadata = {
       {
         url: "/favicon.ico",
         type: "image/x-icon",
+        sizes: "32x32",
       },
       {
         url: "/favicon.png",
         type: "image/png",
+        sizes: "96x96",
       },
     ],
 
-    shortcut: "/favicon.png",
-    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
+    apple: [
+      {
+        url: "/apple-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 
   openGraph: {
@@ -72,6 +80,15 @@ export const metadata: Metadata = {
 
     url: siteUrl,
     siteName: "UA Engineering PTE. LTD.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "UA Engineering PTE. LTD.",
+        type: "image/jpeg",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -81,6 +98,7 @@ export const metadata: Metadata = {
     title: "UA Engineering PTE. LTD.",
     description:
       "Professional Renovation & Engineering Services Across Singapore.",
+    images: ["/og-image.jpg"],
   },
 };
 
