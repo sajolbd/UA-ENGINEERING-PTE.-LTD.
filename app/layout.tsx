@@ -1,4 +1,3 @@
-
 // app/layout.tsx
 
 import type { Metadata } from "next";
@@ -20,8 +19,7 @@ const josefinSans = Josefin_Sans({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://ninja-marketing-solution.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://ua-engineering-pte.vercel.app/";
 
 /* -------------------------------------------------------------------------- */
 /*                                   METADATA                                 */
@@ -96,11 +94,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={josefinSans.variable}
-    >
+    <html lang="en" suppressHydrationWarning className={josefinSans.variable}>
       <body className="bg-white text-black antialiased">
         <noscript>
           <style>
