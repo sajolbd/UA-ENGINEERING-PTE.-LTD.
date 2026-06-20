@@ -30,12 +30,23 @@ export default function WhyRely() {
   return (
     <section className="bg-white py-16 lg:py-24">
       <Container>
+        {/* Mobile Header (Visible only on mobile/tablet) */}
+        <div className="mb-10 block lg:hidden">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            RELIABILITY & TRUST
+          </p>
+          <h2 className="mt-3 text-4xl font-extrabold tracking-tight text-secondary sm:text-5xl">
+            Why Do You Rely On Us?
+          </h2>
+          <div className="mt-4 h-1 w-20 rounded bg-primary" />
+        </div>
+
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:items-center">
           
           {/* Left Column - Content */}
           <div className="lg:col-span-7 order-2 lg:order-1">
-            {/* Header */}
-            <div className="mb-10">
+            {/* Desktop Header (Visible only on desktop) */}
+            <div className="mb-10 hidden lg:block">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
                 RELIABILITY & TRUST
               </p>
