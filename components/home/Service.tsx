@@ -79,7 +79,7 @@ const services = [
 
 export default function Service() {
   return (
-    <section id="services" className="bg-[#f8fafc] py-16 lg:py-24">
+    <section id="services" className="bg-[#f8fafc] py-8 lg:py-12">
       <Container>
         {/* Header Section */}
         <div className="mx-auto max-w-3xl text-center mb-16">
@@ -102,9 +102,8 @@ export default function Service() {
             return (
               <div
                 key={service.title}
-                className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-500 ease-in-out hover:-translate-y-2 hover:bg-primary hover:shadow-2xl hover:border-transparent ${
-                  isLast ? "md:col-span-2 lg:col-span-1 lg:col-start-2" : ""
-                }`}
+                className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-500 ease-in-out hover:-translate-y-2 hover:bg-primary hover:shadow-2xl hover:border-transparent ${isLast ? "md:col-span-2 lg:col-span-1 lg:col-start-2" : ""
+                  }`}
               >
                 {/* Image Wrapper */}
                 <div className="relative mb-6 h-[220px] w-full overflow-hidden rounded-xl bg-slate-100">

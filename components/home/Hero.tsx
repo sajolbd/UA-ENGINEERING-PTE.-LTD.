@@ -20,7 +20,7 @@ const highlights = [
 export default function Hero() {
   return (
     <div className="bg-white">
-      <section className="relative overflow-hidden bg-white lg:h-[calc(100vh-132px)] py-8 sm:py-12 lg:py-0">
+      <section className="relative overflow-hidden bg-white lg:h-[calc(100vh-132px)] py-6 sm:py-10 lg:py-0">
         <Image
           src="/images/home/hero/hero-bg.png"
           alt=""
@@ -46,31 +46,29 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="mx-auto mt-6 flex w-full max-w-[1200px] justify-center sm:mt-9 lg:mt-14 lg:pb-36 xl:mt-16 xl:pb-40">
-            <div className="flex w-full max-w-[360px] flex-row gap-2 sm:max-w-none sm:gap-4">
-              <a
-                href="https://wa.me/6598411786?text=Hello%20UA%20Engineering%2C%20I%20would%20like%20to%20discuss%20a%20project."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group/whatsapp relative inline-flex min-h-10 flex-1 items-center justify-center gap-1.5 overflow-hidden rounded-full bg-primary px-3 py-2 text-sm font-bold text-white shadow-sm transition-colors duration-300 sm:min-h-11 sm:min-w-[190px] sm:flex-none sm:gap-2 sm:px-6 sm:py-3 sm:text-base"
-              >
-                <span className="absolute inset-0 translate-x-[-101%] rounded-full bg-secondary transition-transform duration-500 ease-in-out group-hover/whatsapp:translate-x-0" />
-                <span className="relative z-10 flex items-center gap-2 transition-colors duration-300">
-                  <MessageCircle size={20} />
-                  WhatsApp Us
-                </span>
-              </a>
-              <Link
-                href="/#services"
-                className="group/learn relative inline-flex min-h-10 flex-1 items-center justify-center gap-1.5 overflow-hidden rounded-full bg-secondary px-3 py-2 text-sm font-bold text-white shadow-sm transition-colors duration-300 sm:min-h-11 sm:min-w-[190px] sm:flex-none sm:gap-2 sm:px-6 sm:py-3 sm:text-base"
-              >
-                <span className="absolute inset-0 translate-x-[-101%] rounded-full bg-primary transition-transform duration-500 ease-in-out group-hover/learn:translate-x-0" />
-                <span className="relative z-10 flex items-center gap-2 transition-colors duration-300">
-                  Learn More
-                  <MoveRight size={18} />
-                </span>
-              </Link>
-            </div>
+          <div className="mx-auto mt-6 flex w-full max-w-[1160px] justify-between items-center gap-4 sm:mt-9 lg:mt-14 lg:pb-36 xl:mt-16 xl:pb-40 px-4 sm:px-0">
+            <a
+              href="https://wa.me/6598411786?text=Hello%20UA%20Engineering%2C%20I%20would%20like%20to%20discuss%20a%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/whatsapp relative inline-flex min-h-10 flex-1 items-center justify-center gap-1.5 overflow-hidden rounded-full bg-primary px-3 py-2 text-sm font-bold text-white shadow-sm transition-colors duration-300 sm:min-h-11 sm:min-w-[190px] sm:flex-none sm:gap-2 sm:px-6 sm:py-3 sm:text-base"
+            >
+              <span className="absolute inset-0 translate-x-[-101%] rounded-full bg-secondary transition-transform duration-500 ease-in-out group-hover/whatsapp:translate-x-0" />
+              <span className="relative z-10 flex items-center gap-2 transition-colors duration-300">
+                <MessageCircle size={20} />
+                WhatsApp Us
+              </span>
+            </a>
+            <Link
+              href="/#services"
+              className="group/learn relative inline-flex min-h-10 flex-1 items-center justify-center gap-1.5 overflow-hidden rounded-full bg-secondary px-3 py-2 text-sm font-bold text-white shadow-sm transition-colors duration-300 sm:min-h-11 sm:min-w-[190px] sm:flex-none sm:gap-2 sm:px-6 sm:py-3 sm:text-base"
+            >
+              <span className="absolute inset-0 translate-x-[-101%] rounded-full bg-primary transition-transform duration-500 ease-in-out group-hover/learn:translate-x-0" />
+              <span className="relative z-10 flex items-center gap-2 transition-colors duration-300">
+                Learn More
+                <MoveRight size={18} />
+              </span>
+            </Link>
           </div>
 
           <div className="relative mx-auto mt-8 sm:mt-12 grid w-full max-w-[1160px] grid-cols-2 gap-2 rounded-[22px] bg-white/88 p-2 shadow-[0_18px_55px_rgba(15,23,42,0.18)] backdrop-blur sm:gap-3 sm:rounded-[34px] sm:p-3 lg:absolute lg:inset-x-4 lg:bottom-6 lg:grid-cols-4">

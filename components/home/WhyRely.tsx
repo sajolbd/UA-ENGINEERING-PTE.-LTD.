@@ -28,7 +28,7 @@ const features = [
 
 export default function WhyRely() {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-8 lg:py-12">
       <Container>
         {/* Mobile Header (Visible only on mobile/tablet) */}
         <div className="mb-10 block lg:hidden">

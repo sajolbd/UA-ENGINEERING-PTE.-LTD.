@@ -13,7 +13,7 @@ import Container from "components/shared/Container";
 
 export default function AboutSection() {
     return (
-        <section className="overflow-hidden bg-white py-16 lg:py-24">
+        <section className="overflow-hidden bg-white py-8 lg:py-12">
             <Container>
                 <div className="grid items-center gap-16 lg:grid-cols-2">
                     {/* Left Side */}
@@ -78,7 +78,7 @@ export default function AboutSection() {
 
                         {/* Description */}
                         <p className="mb-10 text-base sm:text-lg leading-6 text-slate-950">
-                            At UA ENGINEERING PTE. LTD., we deliver reliable
+                            At UA ENGINEERING PTE. LTD. we deliver reliable
                             Renovation & Upgrading solutions grounded in
                             integrity, expertise, and precision. Our team
                             ensures every project meets high standards of

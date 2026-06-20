@@ -51,7 +51,7 @@ const traditionalIssues = [
 
 export default function WhyChoose() {
   return (
-    <section className="bg-slate-50 py-16 lg:py-24">
+    <section className="bg-slate-50 py-8 lg:py-12">
       <Container>
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
@@ -66,13 +66,13 @@ export default function WhyChoose() {
 
         {/* Comparison Cards Grid */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          
+
           {/* Left Card - UA Engineering */}
           <div className="rounded-3xl border-2 border-secondary/10 bg-white p-6 shadow-sm transition-all duration-300 hover:border-secondary hover:shadow-xl sm:p-8">
             <h3 className="mb-10 text-center text-2xl font-black text-secondary leading-snug">
               Why Choose UA Engineering Waterproofing Services?
             </h3>
-            
+
             <div className="space-y-8">
               {uaBenefits.map((benefit) => (
                 <div key={benefit.title} className="group flex gap-4 items-start">
@@ -80,7 +80,7 @@ export default function WhyChoose() {
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-secondary/30 bg-secondary/5 text-secondary transition-all duration-300 group-hover:bg-secondary group-hover:text-white group-hover:scale-110">
                     <ThumbsUp size={20} className="transition-all duration-300 ease-in-out group-hover:scale-125 group-hover:-translate-y-0.5 group-hover:rotate-[15deg]" />
                   </div>
-                  
+
                   {/* Text Description */}
                   <div>
                     <h4 className="text-lg font-bold text-secondary transition-colors duration-300">

@@ -56,7 +56,7 @@ const projects = [
 
 export default function CompletedProjects() {
   return (
-    <section id="projects" className="bg-white py-16 lg:py-24">
+    <section id="projects" className="bg-white py-8 lg:py-12">
       <Container>
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">

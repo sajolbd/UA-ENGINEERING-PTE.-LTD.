@@ -20,7 +20,7 @@ export default function CallBackSection() {
             <div className="absolute inset-0 bg-black/60 " />
 
             <Container className="relative z-10">
-                <div className="flex flex-col gap-6 py-8 lg:flex-row lg:items-center lg:justify-between lg:py-12">
+                <div className="flex flex-col gap-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:py-10">
                     {/* Left Side */}
                     <div className="flex items-center gap-6 lg:max-w-xl">
                         <div className="relative h-[160px] w-[160px] shrink-0 md:h-[190px] md:w-[190px] lg:h-[220px] lg:w-[220px]">

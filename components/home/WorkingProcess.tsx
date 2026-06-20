@@ -37,7 +37,7 @@ const steps = [
 
 export default function WorkingProcess() {
   return (
-    <section id="process" className="bg-[#f8fafc] py-16 lg:py-24 overflow-hidden">
+    <section id="process" className="bg-[#f8fafc] py-8 lg:py-12 overflow-hidden">
       <Container>
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-20">
@@ -66,10 +66,10 @@ export default function WorkingProcess() {
               >
                 {/* Image Ring Circle */}
                 <div className="relative mb-8 flex h-[210px] w-[210px] items-center justify-center">
-                  
+
                   {/* Outer Spinning Ring */}
                   <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/60 animate-[spin_30s_linear_infinite]" />
-                  
+
                   {/* Static Inner Image Box */}
                   <div className="relative h-[180px] w-[180px] rounded-full overflow-hidden border-4 border-white bg-slate-50 shadow-md z-10">
                     <Image

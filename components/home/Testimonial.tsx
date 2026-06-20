@@ -47,7 +47,7 @@ export default function Testimonial() {
   };
 
   return (
-    <section id="testimonials" className="bg-white py-16 lg:py-24">
+    <section id="testimonials" className="bg-white py-8 lg:py-12">
       <Container>
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
