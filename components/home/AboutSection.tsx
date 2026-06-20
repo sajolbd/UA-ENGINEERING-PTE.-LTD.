@@ -21,7 +21,7 @@ export default function AboutSection() {
                         {/* Main Image */}
                         <div className="relative overflow-hidden">
                             <Image
-                                src="/images/about/about-main.jpg"
+                                src="/images/home/about/about-main.jpg"
                                 alt="UA Engineering"
                                 width={700}
                                 height={750}
@@ -47,7 +47,7 @@ export default function AboutSection() {
                         {/* Floating Image */}
                         <div className="absolute -bottom-10 right-5 hidden bg-white p-3 shadow-2xl md:block">
                             <Image
-                                src="/images/about/about-support.jpg"
+                                src="/images/home/about/about-support.jpg"
                                 alt="Support Team"
                                 width={250}
                                 height={250}

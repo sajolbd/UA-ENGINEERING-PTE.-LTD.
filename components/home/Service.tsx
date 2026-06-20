@@ -7,70 +7,70 @@ import Container from "components/shared/Container";
 const services = [
   {
     title: "Full Renovation",
-    image: "/images/services/full-renovation.jpg",
+    image: "/images/home/services/full-renovation.jpg",
     alt: "Full renovation service",
     description:
       "Comprehensive structural and aesthetic renovation solutions for residential, commercial, and industrial spaces across Singapore. From meticulous space planning to premium custom finishes, we deliver turnkey excellence.",
   },
   {
     title: "Dry Wall Partition",
-    image: "/images/services/dry-wall-partition.jpg",
+    image: "/images/home/services/dry-wall-partition.jpg",
     alt: "Drywall partition service",
     description:
       "High-grade drywall partition and gypsum wall systems designed for efficient space utilization, acoustical isolation, and fire rating compliance. Perfect for modern office layouts and room dividing.",
   },
   {
     title: "Hacking & Demolition",
-    image: "/images/services/hacking-demolition.jpg",
+    image: "/images/home/services/hacking-demolition.jpg",
     alt: "Hacking and demolition service",
     description:
       "Safe, regulated, and precise hacking and structural demolition services. Executed by trained professionals following strict HDB, BCA, and safety standards, ensuring complete debris clearance.",
   },
   {
     title: "False Ceiling",
-    image: "/images/services/false-ceiling.jpg",
+    image: "/images/home/services/false-ceiling.jpg",
     alt: "False ceiling installation",
     description:
       "Aesthetic and functional false ceilings, suspended grid systems, and custom light-cove detailing. Engineered to conceal building services while enhancing acoustic and thermal performance.",
   },
   {
     title: "Painting & Plastering",
-    image: "/images/services/painting-plastering.jpg",
+    image: "/images/home/services/painting-plastering.jpg",
     alt: "Painting and plastering service",
     description:
       "Premium interior and exterior plastering, skim coating, and painting. We utilize premium, durable, and low-VOC paint formulations for a flawless, long-lasting, and environmentally safe finish.",
   },
   {
     title: "Vinyl Flooring",
-    image: "/images/services/vinyl-flooring.jpg",
+    image: "/images/home/services/vinyl-flooring.jpg",
     alt: "Vinyl flooring installation",
     description:
       "Heavy-duty, high-performance waterproof and scratch-resistant vinyl flooring solutions. Available in a wide range of realistic wood and stone patterns suitable for high-traffic environments.",
   },
   {
     title: "Electrical",
-    image: "/images/services/electrical.jpg",
+    image: "/images/home/services/electrical.jpg",
     alt: "Electrical installation service",
     description:
       "Full-scale electrical installation, wiring, testing, and distribution boards setup. Managed by certified, licensed EMA electricians to guarantee building safety, reliability, and code compliance.",
   },
   {
     title: "Plumbing",
-    image: "/images/services/plumbing.jpg",
+    image: "/images/home/services/plumbing.jpg",
     alt: "Plumbing services",
     description:
       "Complete residential and commercial sanitary engineering and plumbing solutions. Covers high-pressure pipe installations, leak detection, drainage, and plumbing system maintenance.",
   },
   {
     title: "Tiles Installation",
-    image: "/images/services/tiles-installation.jpg",
+    image: "/images/home/services/tiles-installation.jpg",
     alt: "Tile installation service",
     description:
       "Precision tiling for kitchens, bathrooms, feature walls, and commercial floors. We handle porcelain, ceramic, marble, and homogeneous tiles with impeccable alignment and grout styling.",
   },
   {
     title: "Fiber Optic Internet",
-    image: "/images/services/fiber-optic.jpg",
+    image: "/images/home/services/fiber-optic.jpg",
     alt: "Fiber optic installation service",
     description:
       "Structured network cabling, fiber optic path routing, and high-speed data point installations. Engineered to support seamless, reliable connectivity for modern smart environments.",
