@@ -7,6 +7,7 @@ import WorkingProcess from "components/home/WorkingProcess";
 import React from "react";
 import Services from "components/home/Services";
 import WhyRely from "components/home/WhyRely";
+import WhyChoose from "components/home/WhyChoose";
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
       <CompletedProjects />
       <WorkingProcess />
       <WhyRely />
+      <WhyChoose />
     </div>
   );
 };

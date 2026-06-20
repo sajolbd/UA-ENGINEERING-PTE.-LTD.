@@ -42,7 +42,7 @@ export default function WhyRely() {
         </div>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:items-center">
-          
+
           {/* Left Column - Content */}
           <div className="lg:col-span-7 order-2 lg:order-1">
             {/* Desktop Header (Visible only on desktop) */}
