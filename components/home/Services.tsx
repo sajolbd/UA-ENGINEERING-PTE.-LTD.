@@ -192,16 +192,7 @@ export default function Services() {
     return (
         <section id="services" className="bg-white py-8 lg:py-12">
             <Container>
-                <div className="mx-auto max-w-3xl text-center">
-                    <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary">
-                        What We Do
-                    </p>
-                    <h2 className="mt-3 text-3xl font-bold text-secondary sm:text-4xl">
-                        Our Services
-                    </h2>
-                </div>
-
-                <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-6">
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-6">
                     {services.map(({ title, icon: Icon, slug }) => (
                         <Link
                             key={title}
