@@ -64,7 +64,7 @@ export default function BlogNavigation({
           {/* Scrollable category list — no scrollbar */}
           <div
             ref={scrollRef}
-            className="flex items-center gap-2 overflow-x-auto py-4 no-scrollbar whitespace-nowrap flex-1"
+            className="flex items-center gap-4 overflow-x-auto py-4 no-scrollbar whitespace-nowrap flex-1"
           >
             {categories.map((category) => {
               const isActive = activeCategory === category;
