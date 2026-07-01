@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BlogPost } from "../../data/blogData";
+import { getBlogImageUrl } from "../../lib/api";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -19,7 +20,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       <div className={`w-24 sm:w-28 md:w-32 lg:w-24 xl:w-28 2xl:w-32 shrink-0 aspect-[4/3] ${post.bgColor || 'bg-slate-100'} flex items-center justify-center p-1.5 rounded-xl transition-all duration-300 group-hover:opacity-95`}>
         <div className="relative w-full h-full rounded-lg overflow-hidden shadow-sm bg-white border border-white/60">
           <Image
-            src={post.image}
+            src={getBlogImageUrl(post.image)}
             alt={post.title}
             fill
             sizes="(max-width: 640px) 96px, (max-width: 1024px) 128px, 96px"

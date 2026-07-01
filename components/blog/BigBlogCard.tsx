@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BlogPost } from "../../data/blogData";
+import { getBlogImageUrl } from "../../lib/api";
 
 interface BigBlogCardProps {
   post: BlogPost;
@@ -23,7 +24,7 @@ export default function BigBlogCard({ post }: BigBlogCardProps) {
       {/* Top: Large Feature Image */}
       <div className="relative aspect-[16/11] w-full bg-slate-50 border-b border-slate-50 overflow-hidden shrink-0">
         <Image
-          src={post.image}
+          src={getBlogImageUrl(post.image)}
           alt={post.title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"

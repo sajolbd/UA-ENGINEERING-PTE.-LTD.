@@ -9,13 +9,10 @@ import Breadcrumb from "../../../../components/layout/Breadcrumb";
 import BlogSidebar from "../../../../components/blog/BlogSidebar";
 import InlineShare from "../../../../components/blog/InlineShare";
 import { BlogPost } from "../../../../hooks/useBlogPosts";
+import { API_BASE, getBlogImageUrl } from "../../../../lib/api";
 
 // Allow dynamic rendering so new posts appear without a rebuild
 export const dynamic = "force-dynamic";
-
-const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://ua-engineering-pte-ltd-backend-production.up.railway.app";
 
 const siteUrl = "https://ua-engineering-pte.vercel.app";
 
@@ -50,7 +47,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const plainText = post.content.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   const description = plainText.slice(0, 160);
   const pageUrl = `${siteUrl}/blog/${post.slug}`;
-  const imageUrl = post.image.startsWith("http") ? post.image : `${siteUrl}${post.image}`;
+  const imageUrl = getBlogImageUrl(post.image);
 
   return {
     title: post.title,
@@ -101,6 +98,11 @@ export default async function BlogDetailPage({ params }: PageProps) {
     const replacement = `<h3 id="${heading.id}">${heading.text}</h3>`;
     processedContent = processedContent.replace(target, replacement);
   });
+
+  // Replace any relative /images/uploads/ paths or localhost URLs with Railway production backend url
+  processedContent = processedContent
+    .replace(/src="http:\/\/localhost:5000\/images\/uploads\//g, `src="${API_BASE}/images/uploads/`)
+    .replace(/src="\/images\/uploads\//g, `src="${API_BASE}/images/uploads/`);
 
   return (
     <div className="bg-slate-50/50 min-h-screen">
@@ -170,7 +172,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
                 {/* Featured Image */}
                 <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-8 bg-slate-50 border border-slate-100">
                   <Image
-                    src={post.image}
+                    src={getBlogImageUrl(post.image)}
                     alt={post.title}
                     fill
                     priority

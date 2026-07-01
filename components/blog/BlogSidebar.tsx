@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { BlogPost } from "../../data/blogData";
+import { getBlogImageUrl } from "../../lib/api";
 
 interface BlogSidebarProps {
   mode: "popular" | "detail";
@@ -113,7 +114,7 @@ export default function BlogSidebar({
               <div className={`h-12 w-12 rounded-lg shrink-0 overflow-hidden relative ${post.bgColor || 'bg-slate-100'} flex items-center justify-center p-1 border border-slate-100/80 bg-white`}>
                 <div className="relative w-full h-full rounded-md overflow-hidden bg-white">
                   <Image
-                    src={post.image}
+                    src={getBlogImageUrl(post.image)}
                     alt={post.title}
                     fill
                     sizes="48px"

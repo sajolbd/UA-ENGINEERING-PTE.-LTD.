@@ -6,6 +6,7 @@ import Link from "next/link";
 import Swal from "sweetalert2";
 import Container from "../shared/Container";
 import { useBlogPosts } from "../../hooks/useBlogPosts";
+import { getBlogImageUrl } from "../../lib/api";
 
 export default function FeaturedBlog() {
   const { posts: blogPosts } = useBlogPosts();
@@ -80,7 +81,7 @@ export default function FeaturedBlog() {
                     className="relative w-full h-full block group/slide"
                   >
                     <Image
-                      src={post.image}
+                      src={getBlogImageUrl(post.image)}
                       alt={post.title}
                       fill
                       sizes="(max-width: 1024px) 100vw, 66vw"
